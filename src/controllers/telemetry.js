@@ -1,6 +1,7 @@
-import {get} from '@/helpers/net.js'
+import net from '@/helpers/net'
 
 export async function getCurrentTelemetry() {
-    let res = await get('/controller/{id}/telemetry')
+    let id = 1
+    let res = await net.get(`http://127.0.0.1:8000/controller/${id}/telemetry`)
     return res
 }
