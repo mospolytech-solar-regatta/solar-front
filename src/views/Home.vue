@@ -57,8 +57,4 @@ export default {
   }
 }
 </script>
-<style scoped>
-.panel {
-  max-height: 25vh
-}
-</style>
+
